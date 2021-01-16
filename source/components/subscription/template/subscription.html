@@ -1,0 +1,86 @@
+{% from 'modal.html' import modal %}
+{% from 'form-elements.html' import form %}
+{% from 'form-elements.html' import input %}
+{% from 'button.html' import button %}
+
+{% macro subscription( data ) %}
+
+
+  {%call modal({id:'modal-subscribe',size:'md'})%}
+    <h2>{{ data.title }}</h2>
+    <div id="form_sub" style="display: block;">
+    {% call form({}) %}
+    <div id='s_email' style="margin:30px auto">
+      {{ input({
+        id:'s_email',
+        label:'Email Address',
+        placeholder:'Email Address',
+       required:'true',
+       type:'email',
+       error:' '
+      }) }}
+      <div class="error"><small class="message"></small></div>
+    </div>
+    <div id="ext_info" class="ext_info h-0" style="display: flex; justify-content: space-between;">
+      <div style="width: 100%; margin-right: 10px;">
+        {{ input({
+          id:'s_fname',
+          label:'First Name',
+          placeholder:'First Name',
+          required:'true',
+          error:' '
+        }) }}
+      <div class="error"><small class="message"></small></div>
+    </div>
+      <div style="width: 100%;">
+        {{ input({
+          id:'s_lname',
+          label:'Last Name',
+          placeholder:'Last Name',
+          required:'true',
+          error:' '
+        }) }}
+      <div class="error"><small class="message"></small></div>
+    </div>
+    </div>
+    <div id="s_buttons"  style="display: flex; justify-content: space-between;">
+      <div id="s_buttons_back" class="s_buttons_back h-0">
+        {{ button( {
+          label: 'Back',
+          url: '#',
+          variant: 'ghost',
+          iconbefore: 'chevron-left'
+        } ) }}
+      </div>
+      <div id="s_submit">
+        {{ button( {
+          label: 'Submit',
+          url: '#',
+          variant: 'secondary',
+          icon: 'chevron-right'
+        } ) }}
+      </div>
+
+    </div>
+    {%endcall%}
+  </div>
+  <div id="error_sub" style="display: none; min-height: 30vh;">
+    <div style="display: flex; justify-content: center; align-items: center; height: 30vh; text-align: center;">
+      <div>
+        <h3 style="margin-bottom: 20px;">
+        Form Submission Unsuccessful! Please Try Again.
+        </h3>
+        <div id="s_error_back">
+          {{ button( {
+            id:'s_error_back',
+            label: 'Back to Form',
+            url: '#',
+            variant: 'ghost',
+            iconbefore: 'chevron-left'
+          } ) }}
+        </div>
+      </div>
+    </div>
+  </div>
+  {%endcall%}
+{%endmacro%}

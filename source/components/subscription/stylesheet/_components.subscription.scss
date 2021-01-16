@@ -1,0 +1,12 @@
+.s_buttons_back,
+.ext_info {
+  max-height: 500px;
+  transition: max-height 0.6s ease-in-out;
+
+}
+
+.h-0 {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease-in-out;
+}
