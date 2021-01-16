@@ -31,6 +31,7 @@ __1. Install all the npm modules__
 `cd sample-node-api`
 
 `npm install`
+
 __2. Start the project__
 
 IN PROJECT ROOT
