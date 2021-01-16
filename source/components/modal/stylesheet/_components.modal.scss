@@ -50,7 +50,7 @@ $modal-min-width-media-query: ($modal-max-width + $modal-gutter-small * 2) - 0.5
     transition: $modal-transition-time $modal-transition-ease 100ms,
       $modal-transition-time $modal-transition-ease;
     transition-property: transform, opacity;
-    background-color: #ccc;
+    background-color: #eee;
   }
 
   .modal__background {
@@ -64,7 +64,7 @@ $modal-min-width-media-query: ($modal-max-width + $modal-gutter-small * 2) - 0.5
   position: absolute;
   top: 0;
   right: 0;
-  background-color: #ccc;
+  background-color: #eee;
 }
 
 .modal__container {
@@ -113,5 +113,5 @@ $modal-min-width-media-query: ($modal-max-width + $modal-gutter-small * 2) - 0.5
 
 .modal-size--md {
   width: 80%;
-  max-width: 1000px;
+  max-width: 600px;
 }

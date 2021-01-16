@@ -120,6 +120,7 @@ class Modal {
     const modal = this.registeredModals[`modal-${data.id}`]
 
     if (!modal || modal.el.modalIsOpen) return
+    //pauses the video on modal open
     document.getElementsByClassName('video__button--pause')[0].click()
 
     const autoFocus = modal.el.dataset.modalAutoFocus === 'true'
@@ -177,6 +178,7 @@ class Modal {
 
     // If there is no modal do nothing
     if (!modal || !modal.el.modalIsOpen) return
+    //video is resumed
     document.getElementsByClassName('video__button--play')[0].click()
 
     const noBodyClass = modal.el.dataset.modalNoBodyClass === 'true'

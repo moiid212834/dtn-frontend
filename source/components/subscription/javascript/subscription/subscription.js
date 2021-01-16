@@ -49,6 +49,7 @@ class Subscription {
 
     })
   }
+
   validateForm(){
     var error = false;
     var helpMessages=[...document.querySelectorAll('.form__item-error')]
@@ -78,7 +79,7 @@ class Subscription {
       url: 'http://localhost:8000/api/v1/test',
       data: {
         values: JSON.stringify(inputValues),
-        generateError:0
+        generateError: 0
       },
       })
       .then(function (response) {
