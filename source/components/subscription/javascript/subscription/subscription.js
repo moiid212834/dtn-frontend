@@ -78,7 +78,7 @@ class Subscription {
       url: 'http://localhost:8000/api/v1/test',
       data: {
         values: JSON.stringify(inputValues),
-        generateError:1
+        generateError:0
       },
       })
       .then(function (response) {
