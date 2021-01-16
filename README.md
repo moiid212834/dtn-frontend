@@ -5,9 +5,7 @@
 # Table of Contents
 1.  [Intro](#markdown-header-intro)
 2.  [Install](#markdown-header-install)
-3.  [Assignment](#markdown-header-assignment)
-4.  [Design](#markdown-header-design)
-5.  [Screencast](#markdown-header-screencast)
+3. [Design](#markdown-header-design)
 ------
 
 # Intro #
