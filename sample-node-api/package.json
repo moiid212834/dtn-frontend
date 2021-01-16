@@ -1,0 +1,23 @@
+{
+  "name": "json-lint-express",
+  "preferGlobal": true,
+  "version": "0.0.1",
+  "author": "Cody Bonney <me@codybonney.com>",
+  "description": "a simple web server that lints json strings",
+  "license": "MIT",
+  "engines": {
+    "node": ">=0.10"
+  },
+  "scripts": {
+    "start": "node ./app.js"
+  },
+  "dependencies": {
+    "africastalking": "0.0.1-a",
+    "body-parser": "^1.15.0",
+    "cors": "^2.8.5",
+    "express": "~4.0.0",
+    "express-validator": "^6.9.2",
+    "json-lint": "~0.1.0",
+    "validator": "^13.5.2"
+  }
+}
